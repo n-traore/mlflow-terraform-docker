@@ -1,0 +1,10 @@
+*.tfplan
+.idea/*
+**/.terraform
+**/local.auto.tfvars
+*.tfstate*
+*.lock.hcl
+**/shares/*
+!**/shares/.gitkeep
+**/mlflow_data/*
+!**/mlflow_data/.gitkeep

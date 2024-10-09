@@ -1,0 +1,7 @@
+-- Create a new schema with database user as owner
+CREATE SCHEMA IF NOT EXISTS ${db_name} AUTHORIZATION ${db_user} ;
+
+-- Set some other settings
+ALTER ROLE ${db_user} SET client_encoding TO 'utf8';
+ALTER ROLE ${db_user} SET default_transaction_isolation TO 'read committed';
+ALTER ROLE ${db_user} SET timezone TO 'UTC';
